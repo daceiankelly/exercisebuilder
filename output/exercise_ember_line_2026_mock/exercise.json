@@ -1,0 +1,219 @@
+{
+  "title": "Exercise EMBER LINE 2026 (MOCK)",
+  "organisation": "Marlow Valley Regional Emergency Management Group",
+  "exercise_type": "Functional exercise",
+  "hazard": "Fast-moving grass and scrub fire on the urban edge",
+  "location": "Harrow Ridge and the township of Dunmore",
+  "start_time": "17:00",
+  "end_time": "21:00",
+  "aim": "To practise an out-of-hours activation of the Marlow Valley EOC and the coordination of partner agencies during a wind-driven fire threatening the township of Dunmore.",
+  "objectives": [
+    "O1 - Activate the EOC out of hours and establish a common operating picture within 30 minutes.",
+    "O2 - Apply pre-agreed triggers to make an evacuation decision within 15 minutes.",
+    "O3 - Coordinate multi-agency resources, including requests for mutual aid.",
+    "O4 - Deliver consistent public information and correct rumour through a single spokesperson.",
+    "O5 - Identify and protect vulnerable people and facilities.",
+    "O6 - Maintain operations through a loss of primary communications."
+  ],
+  "agencies": [
+    {
+      "agency": "Marlow Valley EOC",
+      "role": "Lead agency. Controller, Operations, Planning, Logistics, Public Information (PIO)."
+    },
+    {
+      "agency": "Marlow Valley Fire and Rescue",
+      "role": "Fire attack, structure protection, fire behaviour advice."
+    },
+    {
+      "agency": "Marlow Valley Police",
+      "role": "Road closures, cordons, evacuation support."
+    },
+    {
+      "agency": "Regional Ambulance Service",
+      "role": "Casualty care, movement of non-ambulant patients."
+    },
+    {
+      "agency": "Community Welfare Team",
+      "role": "Evacuation centres, registration, welfare needs."
+    },
+    {
+      "agency": "Exercise Control (EXCON)",
+      "role": "Delivers injects, simulates all non-playing agencies, media and public."
+    }
+  ],
+  "scenario_background": [
+    "After six weeks without rain the fire danger rating for the Marlow Valley is Extreme. A dry north-westerly of 45 km/h, gusting to 70 km/h, is forecast until midnight.",
+    "Dunmore (population 5,200) sits below Harrow Ridge. The Ridgeview estate (about 280 homes), Dunmore Primary School and Harrow Lodge rest home back directly onto scrub.",
+    "It is a weekday evening. Most EOC staff have gone home. The exercise starts at 17:00 with a report of smoke on Harrow Ridge."
+  ],
+  "phases": [
+    {
+      "name": "Phase 1 - Warning and activation",
+      "start": "17:00",
+      "end": "18:00",
+      "summary": "First reports, out-of-hours call-in, EOC activation."
+    },
+    {
+      "name": "Phase 2 - Escalation and evacuation",
+      "start": "18:00",
+      "end": "19:20",
+      "summary": "Fire crosses the ridge, evacuation decision for Ridgeview."
+    },
+    {
+      "name": "Phase 3 - Peak impact",
+      "start": "19:20",
+      "end": "20:40",
+      "summary": "Vulnerable facilities, rumour, loss of communications."
+    },
+    {
+      "name": "Phase 4 - Transition to recovery",
+      "start": "20:40",
+      "end": "21:00",
+      "summary": "Wind change, containment, handover, ENDEX."
+    }
+  ],
+  "injects": [
+    {
+      "number": 1,
+      "time": "17:00",
+      "sender": "Fire and Rescue Communications",
+      "recipient": "EOC Duty Officer",
+      "method": "Phone",
+      "message": "Multiple calls reporting smoke and flame on the north face of Harrow Ridge. Two appliances are responding. The fire is about 2 hectares and spreading uphill.",
+      "expected_actions": [
+        "Start the out-of-hours call-in",
+        "Activate the EOC to Level 2",
+        "Open the incident log"
+      ],
+      "objectives": "O1"
+    },
+    {
+      "number": 2,
+      "time": "17:30",
+      "sender": "Fire and Rescue Incident Commander",
+      "recipient": "EOC Operations",
+      "method": "Radio",
+      "message": "The fire is now 15 hectares and has reached the ridge line. With this wind it could reach the back fences of Ridgeview in 60 to 90 minutes.",
+      "expected_actions": [
+        "Map properties at risk in Ridgeview",
+        "Brief the Controller against the evacuation triggers",
+        "Request Police liaison"
+      ],
+      "objectives": "O1, O2"
+    },
+    {
+      "number": 3,
+      "time": "18:00",
+      "sender": "Fire and Rescue Incident Commander",
+      "recipient": "EOC Controller",
+      "method": "Phone",
+      "message": "Spot fires have started 300 m ahead of the main front, on the Dunmore side of the ridge. I recommend evacuating Ridgeview now.",
+      "expected_actions": [
+        "Decide on evacuation within 15 minutes",
+        "Issue the evacuation notice",
+        "Task Police with door-knocking and traffic control"
+      ],
+      "objectives": "O2"
+    },
+    {
+      "number": 4,
+      "time": "18:30",
+      "sender": "Harrow Lodge rest home manager",
+      "recipient": "Community Welfare Team",
+      "method": "Phone",
+      "message": "We have 36 residents, 9 of them bed-bound, and only two night staff on site. We have one minibus. We are not on any list we know of. What should we do?",
+      "expected_actions": [
+        "Check the vulnerable facilities register",
+        "Arrange transport with Ambulance",
+        "Confirm a receiving facility"
+      ],
+      "objectives": "O5"
+    },
+    {
+      "number": 5,
+      "time": "19:00",
+      "sender": "Police Communications",
+      "recipient": "EOC Operations",
+      "method": "Radio",
+      "message": "Ridge Road, the main route out of Ridgeview, is blocked by a two-vehicle crash in heavy smoke. One person is trapped. Traffic is backing up into the estate.",
+      "expected_actions": [
+        "Agree an alternative evacuation route",
+        "Prioritise rescue and fire resources",
+        "Request mutual aid"
+      ],
+      "objectives": "O3"
+    },
+    {
+      "number": 6,
+      "time": "19:30",
+      "sender": "Valley FM radio reporter",
+      "recipient": "Public Information Officer",
+      "method": "Phone",
+      "message": "Posts online say Dunmore Primary School has burned down with children still inside at an after-school programme. Can you confirm? We go to air in ten minutes.",
+      "expected_actions": [
+        "Confirm the facts with Fire and Police",
+        "Issue a correction through the single spokesperson",
+        "Tell the Controller and all functions"
+      ],
+      "objectives": "O4"
+    },
+    {
+      "number": 7,
+      "time": "20:00",
+      "sender": "EOC Logistics (runner)",
+      "recipient": "EOC Controller",
+      "method": "Written message",
+      "message": "The fire has damaged the Harrow Ridge radio repeater. Primary radio is down across the district and mobile coverage in Dunmore is congested.",
+      "expected_actions": [
+        "Activate the backup communications plan",
+        "Confirm contact with every field team",
+        "Adjust the reporting rhythm"
+      ],
+      "objectives": "O6"
+    },
+    {
+      "number": 8,
+      "time": "20:40",
+      "sender": "Exercise Control",
+      "recipient": "All players",
+      "method": "Verbal announcement",
+      "message": "The wind has dropped and swung to the south. The fire is contained at the Ridgeview boundary. Eleven homes are damaged. Begin the transition to recovery. ENDEX will be called at 21:00.",
+      "expected_actions": [
+        "Produce a final situation report",
+        "Brief the incoming recovery manager",
+        "List the first five recovery priorities"
+      ],
+      "objectives": "O1, O3"
+    }
+  ],
+  "rules_of_play": [
+    "All exercise messages begin and end with the words EXERCISE EXERCISE EXERCISE.",
+    "The code words NO DUFF mean a real emergency or injury. Play stops immediately.",
+    "Players respond as they would in a real event, using current plans and procedures.",
+    "Do not contact anyone outside the exercise. EXCON simulates all outside agencies.",
+    "Exercise time is real time. There are no time jumps."
+  ],
+  "assumptions_and_artificialities": [
+    "Fire behaviour is scripted and has not been checked against a fire behaviour model.",
+    "Assumes pre-agreed evacuation triggers now exist, as recommended after the previous exercise.",
+    "No field resources are deployed. Field teams are simulated by EXCON."
+  ],
+  "evaluation_criteria": [
+    "Time from first report to EOC staffed at Level 2.",
+    "Time from the evacuation recommendation to the decision.",
+    "One set of figures used in every situation report.",
+    "Time for the PIO to learn of and correct the school rumour.",
+    "Time to confirm contact with all field teams after the radio failure."
+  ],
+  "debrief_questions": [
+    "What went well?",
+    "What slowed us down?",
+    "Did everyone share the same picture of the situation?",
+    "What one thing would you change before the next real event?"
+  ],
+  "facilitator_notes": [
+    "Injects 3, 6 and 7 repeat the three weakest areas from the previous after-action report.",
+    "Inject 4 tests whether the vulnerable facilities register has been updated.",
+    "This is a canned mock exercise used to test the pipeline. It was not written by the API."
+  ]
+}
